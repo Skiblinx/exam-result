@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #024242;
+        color: rgba(255, 255, 255, 0.33);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      ul {
+        padding: 0;
+        text-align: left;
+      }
+
+      .container {
+        text-align: center;
+        position: relative;
+        width: 800px;
+        height: auto;
+        background-image: url(/images/mka-flag.png);
+        background-size: cover;
+        background-position: center;
+      }
+
+      .ray {
+        width: 800px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bg_image {
+        position: absolute;
+        top: 0;
+        left: 5px;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 82, 73, 0.99);
+        z-index: 0;
+      }
+
+      .user_image {
+        margin-top: 95px;
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+        padding: 20px;
+      }
+
+      .img-wrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+      }
+
+      .user_details h3 {
+        font-size: 24px;
+        color: #ffff;
+        margin-bottom: 0;
+      }
+
+      .exam_summary {
+        width: 78%;
+        font-size: 35px;
+        color: rgba(144, 146, 32, 1);
+        font-weight: 700;
+        line-height: 50px;
+        margin: 45px auto;
+      }
+
+      .exam-titles {
+        margin: 20px auto;
+        width: 90%;
+      }
+
+      .exam-titles p {
+        text-align: left;
+      }
+
+      .exam-titles li {
+        background-color: #fff;
+        color: rgba(144, 146, 32, 1);
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 7px;
+        display: inline-block;
+        margin: 5px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 10px 0px 10px 45px;
+        font-size: 24px;
+      }
+
+      .footer_cta {
+        text-align: left;
+      }
+
+      .footer a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 20px;
+        font-style: italic;
+      }
+
+      .footer a:hover {
+        color: rgba(144, 146, 32, 1);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h2>MKAN TALEEM EXAMINATION</h2>
+        <div class="bg_image">
+          <img class="ray" src="./images/rays.png" alt="Avatar" />
+        </div>
+
+        <div class="user_image">
+          <img
+            src="./images/BORDER.png"
+            alt="Avatar"
+            width="210px"
+            height="210px"
+          />
+        </div>
+        <div class="user_details">
+          <h3>Ahmad Bin Yusuf</h3>
+          <p>Ijoko Jama'at</p>
+        </div>
+
+        <p class="exam_summary">
+          I scored 75% in the National Taleem Examination for July
+        </p>
+        <div class="exam-titles">
+          <p>EXAM TITLES</p>
+          <ul>
+            <li>Salat</li>
+            <li>Khatmun Nubuwwat</li>
+            <li>Hadith</li>
+            <li>Prayers of the Holy Prophet</li>
+          </ul>
+        </div>
+        <div class="footer">
+          <p class="footer_cta">
+            TAKE YOUR EXAM AT:
+            <a href="https://e-learningportal.com/exam"
+              >e-learningportal.com/exam</a
+            >
+          </p>
+          <p class="result_date">MAY 29, 2024</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
